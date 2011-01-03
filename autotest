@@ -1,0 +1,7 @@
+require 'autotest/fsevent'
+require 'autotest/growl'
+
+# redgreen doesn't work with ruby 1.9
+if RUBY_VERSION.to_f <= 1.9
+  #require 'redgreen/autotest'
+end

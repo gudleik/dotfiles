@@ -1,0 +1,3 @@
+hardstatus alwayslastline "%{.bW}%-w%{.wR}%n %t%{-}%+w %=%{..G} %H: %l%{..Y} %m/%d %c"
+defcharset utf8
+startup_message off

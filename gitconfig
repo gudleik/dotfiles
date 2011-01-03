@@ -1,0 +1,25 @@
+[github]
+  user = gudleik
+  token = 8886acc3db0da45c011a31823f64bab1
+
+[user]
+	name = Gudleik Rasch
+	email = gudleik@gmail.com
+  [color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+
+[apply]
+  whitespace = nowarn
+
+[core]
+  excludesfile = /Users/gudleik/.gitignore
