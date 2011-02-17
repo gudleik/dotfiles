@@ -1,10 +1,9 @@
 [github]
   user = gudleik
-  token = 8886acc3db0da45c011a31823f64bab1
 
 [user]
 	name = Gudleik Rasch
-	email = gudleik@gmail.com
+	email = gr@skalar.no
   [color]
   ui = auto
   diff = auto

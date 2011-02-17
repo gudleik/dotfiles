@@ -5,3 +5,8 @@ require 'autotest/growl'
 if RUBY_VERSION.to_f <= 1.9
   #require 'redgreen/autotest'
 end
+
+Autotest.add_hook :initialize do |autotest|
+  %w{.git .svn .hg .DS_Store ._* vendor}.each {|exception| autotest.add_exception(exception) }
+  false
+end
