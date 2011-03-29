@@ -39,3 +39,9 @@ alias xmldelete="curl -X DELETE -H 'Accept: application/xml'"
 
 alias mx='host -t mx '
 alias dig='dig +noauth +noquestion '
+
+alias b="bundle"
+alias bi="b install --path vendor"
+alias bu="b update"
+alias be="b exec"
+alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"

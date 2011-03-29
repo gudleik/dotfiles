@@ -1,5 +1,7 @@
 export PATH=$PATH:~/config/bin
 export EDITOR=mvim
+export GIT_EDITOR=vim
+export GEM_OPEN_EDITOR="mate"
 export JAVA_HOME=/Library/Java/Home
 
 export LANG=en_US.UTF-8
@@ -8,8 +10,7 @@ export LC_CTYPE=en_US.UTF-8
 export LESS="-R -M --shift 5"                               
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LESSCOLOR=1
-export EMAIL=gr@skalar.no
+export EMAIL=gudleik@gmail.com
 export ACK_PAGER="less $LESS"
 
 export PAGER="less $LESS"
-export GEM_OPEN_EDITOR="mate"

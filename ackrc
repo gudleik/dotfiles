@@ -2,3 +2,4 @@
 --color
 --type-set=haml=.haml
 --type-set=slim=.slim
+--type-set=sass=.sass
