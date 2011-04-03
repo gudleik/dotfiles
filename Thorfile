@@ -18,6 +18,8 @@ class Dotfiles
       Dir[File.join(ROOT, 'dotfiles', '*')].each do |f|
         create_link '~/.' + File.basename(f), f
       end
+
+      create_link '~/.oh-my-zsh', File.join(ROOT, 'oh-my-zsh')
       Dir[File.join(ROOT, 'oh-my-zsh-custom', '*.zsh')].each do |f|
         create_link '~/.oh-my-zsh/custom/' + File.basename(f), f
       end
