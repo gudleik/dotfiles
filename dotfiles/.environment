@@ -14,3 +14,6 @@ export EMAIL=gudleik@gmail.com
 export ACK_PAGER="less $LESS"
 
 export PAGER="less $LESS"
+
+export NODE_PATH=/usr/local/lib/node
+

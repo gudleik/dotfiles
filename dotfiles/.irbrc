@@ -1,9 +1,9 @@
 # Load rubygems, wirble and pp
-%w{rubygems wirble pp hirb ap}.each do |lib| 
+%w{wirble hirb ap}.each do |lib| 
   begin 
     require lib 
   rescue LoadError => err
-    $stderr.puts "Couldn't load #{lib}: #{err}"
+    #$stderr.puts "Couldn't load #{lib}: #{err}"
   end
 end
 

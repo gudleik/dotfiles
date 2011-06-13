@@ -22,3 +22,8 @@
 
 [core]
   excludesfile = /Users/gudleik/.gitignore
+
+[merge "gemfilelock"]
+  name = relocks the gemfile.lock
+  driver = bundle lock
+

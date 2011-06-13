@@ -1,6 +1,6 @@
-set mainfont {Monaco 8}
-set textfont {Monaco 8}
-set uifont {{Lucida Grande} 8 bold}
+set mainfont {Monaco 10}
+set textfont {Monaco 10}
+set uifont {{Lucida Grande} 10 bold}
 set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
@@ -24,7 +24,7 @@ set diffcontext 3
 set selectbgcolor gray85
 set extdifftool meld
 set perfile_attrs 0
-set geometry(main) 1436x820+4+0
+set geometry(main) 1436x820+0+27
 set geometry(state) normal
 set geometry(topwidth) 1436
 set geometry(topheight) 382
