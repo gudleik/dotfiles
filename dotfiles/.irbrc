@@ -8,7 +8,7 @@
 end
 
 # Load additional config for rails
-load File.dirname(__FILE__) + '/config/irb-rails' if $0 == 'irb' && ENV['RAILS_ENV']
+load '~/.irb-rails' if $0 == 'irb' && ENV['RAILS_ENV']
 
 if defined?(Wirble)
   %w{init colorize}.each { |str| Wirble.send(str) }

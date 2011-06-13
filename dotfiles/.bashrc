@@ -10,7 +10,7 @@ if [ -n "$PS1" ]; then
   unset   MAILCHECK
   
   # Load aliases
-  source ~/config/aliases
+  source ~/.aliases
 
   # RVM
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
