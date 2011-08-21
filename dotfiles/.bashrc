@@ -12,8 +12,11 @@ if [ -n "$PS1" ]; then
   # Load aliases
   source ~/.aliases
 
-  # RVM
-  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  #complete -C $rvm_scripts_path/rvm-completion.rb -o default rvm
+  # RVM or RBENV
+  if [ "$RUBY_ENV" = "rvm" ]; then
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
+  else
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+  fi
 fi
-  
