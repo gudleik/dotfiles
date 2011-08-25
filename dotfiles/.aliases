@@ -14,11 +14,6 @@ alias rm='rm -i'
 
 alias grep='grep --color=auto'
 
-alias ss="if [ -x script/server ]; then script/server; else rails server; fi"
-alias sc="if [ -x script/console ]; then script/console; else rails console; fi"
-alias sr="touch tmp/restart.txt"
-alias apa='sudo apachectl graceful'
-
 alias irb='irb --readline -r irb/completion'
 
 # GIT aliases
