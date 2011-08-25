@@ -1,3 +1,5 @@
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/X11/bin
+
 # If not running interactively, don't do anything
 if [ -n "$PS1" ]; then
 
@@ -19,4 +21,5 @@ if [ -n "$PS1" ]; then
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
   fi
+
 fi
