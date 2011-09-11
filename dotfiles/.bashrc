@@ -14,6 +14,9 @@ if [ -n "$PS1" ]; then
   # Load aliases
   source ~/.aliases
 
+  # Load knife helpers
+  source ~/.knife_helpers.sh
+
   # RVM or RBENV
   if [ "$RUBY_ENV" = "rvm" ]; then
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
