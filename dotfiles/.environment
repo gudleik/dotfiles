@@ -1,5 +1,5 @@
-export EDITOR=mvim
-export GIT_EDITOR=vim
+export EDITOR="mvim -f"
+export GIT_EDITOR="mvim -f"
 export GEM_OPEN_EDITOR="mate"
 export JAVA_HOME=/Library/Java/Home
 
