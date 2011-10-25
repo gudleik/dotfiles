@@ -41,7 +41,3 @@ alias bi="b install --path vendor"
 alias bu="b update"
 alias be="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
-
-# rbenv/rvm switcher
-alias rbenv!="env RUBY_ENV=rbenv bash -l"
-alias rvm!="env RUBY_ENV=rvm bash -l"
