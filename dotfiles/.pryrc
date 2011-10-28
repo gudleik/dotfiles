@@ -3,10 +3,10 @@ Pry.config.should_load_plugins = true
 #Pry.plugins["editline"].activate!
 Pry.plugins["doc"].activate!
 
-require 'hirb'
+#require 'hirb'
 require 'awesome_print'
 # tell pry to use awesome_print as printer (very noisy)
-# Pry.print = proc { |output, value| output.puts value.ai }
+#Pry.print = proc { |output, value| output.puts value.ai }
 
 # Launch Pry with access to the entire Rails stack.
 # If you have Pry in your Gemfile, you can pass: ./script/console --irb=pry instead.
@@ -15,7 +15,7 @@ rails = File.join Dir.getwd, 'config', 'environment.rb'
 
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   require rails
-  
+
   if Rails.version[0..0] == "2"
     require 'console_app'
     require 'console_with_helpers'
