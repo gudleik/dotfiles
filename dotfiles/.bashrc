@@ -18,11 +18,6 @@ if [ -n "$PS1" ]; then
   source ~/.knife_helpers.sh
 
   # RVM or RBENV
-  if [ "$RUBY_ENV" = "rvm" ]; then
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
-  else
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
-  fi
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
 
 fi
