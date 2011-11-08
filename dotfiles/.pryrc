@@ -1,6 +1,6 @@
 # Load plugins (only those I whitelist)
 Pry.config.should_load_plugins = true
-#Pry.plugins["editline"].activate!
+Pry.plugins["editline"].activate!
 Pry.plugins["doc"].activate!
 
 #require 'hirb'
