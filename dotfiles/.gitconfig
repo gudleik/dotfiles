@@ -11,12 +11,23 @@
   branch = auto
 
 [alias]
+  aa = add --all
   ci = commit
   co = checkout
   st = status
   unstage = reset HEAD --
   last = log -1 HEAD
   dc = diff --cached
+  # from garybernhardt
+  l = log --graph --abbrev-commit --date=relative
+  la = !git l --all
+  fa = fetch --all
+  pom = push origin master
+  b = branch
+  ds = diff --stat=160,120
+
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 
 [apply]
   whitespace = nowarn
@@ -24,7 +35,9 @@
 [core]
   excludesfile = /Users/gudleik/.gitignore
 
-[merge "gemfilelock"]
-  name = relocks the gemfile.lock
-  driver = bundle lock
+[merge]
+  tool = vimdiff
 
+#[merge "gemfilelock"]
+#  name = relocks the gemfile.lock
+#  driver = bundle lock
