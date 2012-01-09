@@ -39,10 +39,12 @@ unsetopt correct_all
 setopt correct
 
 source ~/.environment
+source ~/.knife_helpers.sh
 
 # history search up/down
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+bindkey '\e.' insert-last-word
 
 # ALIASES
 alias -g psg='ps aux | grep'
