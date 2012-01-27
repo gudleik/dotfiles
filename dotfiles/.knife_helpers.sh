@@ -1,4 +1,4 @@
-function knife-ssh() {
+function kssh() {
   node=$1;
   shift;
 

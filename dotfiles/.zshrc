@@ -39,6 +39,7 @@ unsetopt correct_all
 setopt correct
 
 source ~/.environment
+source ~/.knife_helpers.sh
 
 # history search up/down
 bindkey "^[[A" history-search-backward
