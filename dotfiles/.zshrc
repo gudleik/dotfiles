@@ -6,7 +6,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="bira-rbenv"
+
+# Nice rbenv themes: bira, alanpeabody, fino, macovsky-ruby, gallois
+export ZSH_THEME="alanpeabody"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -44,6 +46,7 @@ source ~/.knife_helpers.sh
 # history search up/down
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+bindkey '\e.' insert-last-word
 
 # ALIASES
 alias -g psg='ps aux | grep'

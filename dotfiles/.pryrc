@@ -12,14 +12,22 @@ require 'awesome_print'
 # If you have Pry in your Gemfile, you can pass: ./script/console --irb=pry instead.
 # If you don't, you can load it through the lines below :)
 rails = File.join Dir.getwd, 'config', 'environment.rb'
-
+#
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
-  require rails
-
-  if Rails.version[0..0] == "2"
-    require 'console_app'
-    require 'console_with_helpers'
-  elsif Rails.version[0..0] == "3"
+#  require rails
+#
+#  if Rails.version[0..0] == "2"
+#    require 'console_app'
+#    require 'console_with_helpers'
+#  elsif Rails.version[0..0] == "3"
+#    require 'rails/console/app'
+#    require 'rails/console/helpers'
+#  else
+#    warn "[WARN] cannot load Rails console commands (Not on Rails2 or Rails3?)"
+#  end
+#
+  if Kernel.const_defined?("Rails") then
+    require File.join(Rails.root,"config","environment")
     require 'rails/console/app'
     require 'rails/console/helpers'
     if Rails.version =~ /3.2/
@@ -30,5 +38,10 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     end
   else
     warn "[WARN] cannot load Rails console commands (Not on Rails2 or Rails3?)"
+    Pry::RailsCommands.instance_methods.each do |name| 
+      Pry::Commands.command name.to_s do 
+        Class.new.extend(Pry::RailsCommands).send(name)
+      end
+    end
   end
 end
