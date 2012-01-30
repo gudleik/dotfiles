@@ -30,6 +30,14 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     require File.join(Rails.root,"config","environment")
     require 'rails/console/app'
     require 'rails/console/helpers'
+    if Rails.version =~ /3.2/
+      def reload!
+        ActionDispatch::Reloader.cleanup!
+        ActionDispatch::Reloader.prepare!
+      end
+    end
+  else
+    warn "[WARN] cannot load Rails console commands (Not on Rails2 or Rails3?)"
     Pry::RailsCommands.instance_methods.each do |name| 
       Pry::Commands.command name.to_s do 
         Class.new.extend(Pry::RailsCommands).send(name)
