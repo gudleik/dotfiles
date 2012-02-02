@@ -23,3 +23,11 @@ export EC2_CERT="/Users/gudleik/.ec2/cert.pem"
 export EC2_PRIVATE_KEY="/Users/gudleik/.ec2/key.priv"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.4.1/jars"
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
+
+export MAKEFLAGS="-j 4"
+
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_HEAP_FREE_MIN=500000

@@ -15,6 +15,6 @@ if defined? Wirble
 end
 
 if defined? Pry
-  #pry
+  Pry.start
 end
 #Hirb.enable

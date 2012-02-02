@@ -7,7 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="alanpeabody"
-export ZSH_THEME="bira-rbenv"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -30,9 +29,6 @@ plugins=(git github git-flow thor history-substring-search knife ruby osx brew g
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-#export PATH="$PATH:/Users/trym/.ec2/bin:/Users/trym/.aws_rds/bin"
-
 unsetopt auto_name_dirs
 
 # Disable annoying correction
@@ -40,10 +36,12 @@ unsetopt correct_all
 setopt correct
 
 source ~/.environment
+source ~/.knife_helpers.sh
 
 # history search up/down
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+bindkey '\e.' insert-last-word
 
 # ALIASES
 alias -g psg='ps aux | grep'
