@@ -54,3 +54,8 @@ alias n='nc -vz'
 alias b='bundle'
 alias bi="b install --path vendor"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
+
+# Git aliases
+alias gl='git smart-pull'
+alias gst='git status --short'
+alias gd='git diff'
