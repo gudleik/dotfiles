@@ -17,10 +17,10 @@ alias grep='grep --color=auto'
 alias irb='irb --readline -r irb/completion'
 
 # GIT aliases
-alias gst='git status'
-alias gl='git pull'
+alias gst='git status --short'
+alias gl='git smart-pull'
 alias gp='git push'
-alias gd='git diff | mate'
+alias gd='git diff'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gb='git branch'
