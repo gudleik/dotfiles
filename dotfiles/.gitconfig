@@ -4,7 +4,8 @@
 [user]
 	name = Gudleik Rasch
 	email = gudleik@gmail.com
-  [color]
+
+[color]
   ui = auto
   diff = auto
   status = auto
@@ -18,13 +19,14 @@
   unstage = reset HEAD --
   last = log -1 HEAD
   dc = diff --cached
-  # from garybernhardt
   l = log --graph --abbrev-commit --date=relative
-  la = !git l --all
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  ll = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   fa = fetch --all
   pom = push origin master
   b = branch
   ds = diff --stat=160,120
+  track = checkout -t
 
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
@@ -38,6 +40,13 @@
 [merge]
   tool = vimdiff
 
-#[merge "gemfilelock"]
-#  name = relocks the gemfile.lock
-#  driver = bundle lock
+[status]
+  submodule = 1
+
+[help]
+  autocorrect = 1
+
+[push]
+  # Only push branches that have been set up to track a remote branch.
+  default = current
+

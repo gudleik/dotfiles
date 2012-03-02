@@ -1,4 +1,4 @@
-export PATH="$HOME/.rbenv/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/usr/local/bin:$HOME/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh configuration.
