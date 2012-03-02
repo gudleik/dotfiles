@@ -57,8 +57,10 @@ alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
 # Git aliases
 alias gup='git smart-pull'
-alias gst='git status --short'
+alias gst='git status' 
 alias gd='git diff'
-alias gl='git smart-log'
+alias gl='git l'
+alias gsl='git smart-log'
+alias grh='git reset --hard'
 alias d='git diff'
 alias s='git status --short'
