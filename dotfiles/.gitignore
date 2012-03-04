@@ -2,3 +2,5 @@
 .sass-cache
 *.un~
 *.swp
+tags
+gems.tags
