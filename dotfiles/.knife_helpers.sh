@@ -1,3 +1,15 @@
+function ec2-env() {
+  environment=$1;
+  #shift;
+
+  if [ ! -z "$environment" ]; then
+    ln -nfs ~/.aws/$environment/ec2 ~/.ec2
+    ln -nfs ~/.aws/$environment/chef ~/.chef
+  else
+    ls -l ~/.ec2/cert.pem
+  fi
+}
+
 function kssh() {
   node=$1;
   shift;

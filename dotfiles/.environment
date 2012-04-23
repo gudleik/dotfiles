@@ -20,8 +20,9 @@ export NODE_PATH="/usr/local/lib/node_modules:/usr/local/lib/node"
 export CUCUMBER_FORMAT="pretty"
 
 # Amazon
+export EC2_KEYPAIR="default"
 export EC2_CERT="/Users/gudleik/.ec2/cert.pem"
-export EC2_PRIVATE_KEY="/Users/gudleik/.ec2/key.priv"
+export EC2_PRIVATE_KEY="/Users/gudleik/.ec2/pk.pem"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.5/jars"
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
