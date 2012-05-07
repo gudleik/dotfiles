@@ -36,7 +36,6 @@ unsetopt correct_all
 setopt correct
 
 source ~/.environment
-source ~/.knife_helpers.sh
 
 # history search up/down
 bindkey "^[[A" history-search-backward
@@ -49,19 +48,3 @@ alias la='ls -la'
 alias l='less'
 alias grep='grep --color=auto'
 alias n='nc -vz'
-
-# Bundler aliases
-alias b='bundle'
-alias bi="b install --path vendor"
-alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
-
-# Git aliases
-alias gup='git smart-pull'
-alias gst='git status' 
-alias gd='git diff'
-alias gl='git l'
-alias gsl='git smart-log'
-alias grh='git reset --hard'
-alias d='git diff'
-alias s='git status --short'
-alias gau='git add --update'

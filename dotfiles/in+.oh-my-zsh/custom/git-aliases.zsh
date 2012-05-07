@@ -1,0 +1,10 @@
+# Git aliases
+alias gup='git smart-pull'
+alias gst='git status' 
+alias gd='git diff'
+alias gl='git l'
+alias gsl='git smart-log'
+alias grh='git reset --hard'
+alias d='git diff'
+alias s='git status --short'
+alias gau='git add --update'
