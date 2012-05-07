@@ -11,12 +11,7 @@ function ec2-env() {
 }
 
 function kssh() {
-  node=$1;
-  shift;
-
-  host=`knife node show $node -a ec2.public_hostname | cut -d' ' -f3`
-
-  ssh ubuntu@$host "$*"
+  ssh ubuntu@$(knife node show $1 -a ec2.public_hostname -F text | cut -b 23-)
 }
 
 function knife-create-server() {
