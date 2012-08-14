@@ -11,13 +11,4 @@ if [ -n "$PS1" ]; then
   # Don't want mailcheck enabled
   unset   MAILCHECK
   
-  # Load aliases
-  source ~/.aliases
-
-  # Load knife helpers
-  source ~/.knife_helpers.sh
-
-  # RVM or RBENV
-  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
-
 fi
