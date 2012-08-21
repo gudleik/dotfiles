@@ -2,3 +2,4 @@ export POW_TIMEOUT=3000000
 #export POW_WORKERS=4
 export POW_DOMAINS=dev,local,devtull.info
 export PATH="/Users/gudleik/.rbenv/shims:/Users/gudleik/.rbenv/bin:$PATH"
+export I18N_DEBUG=1
