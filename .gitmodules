@@ -1,3 +1,4 @@
 [submodule "dotfiles/.keys"]
 	path = dotfiles/.keys
 	url = git@github.com:gudleik/keys.git
+  ignore = untracked
