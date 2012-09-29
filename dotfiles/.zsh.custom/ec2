@@ -1,0 +1,2 @@
+name=$1
+test -n "$name" && ln -fsn ~/.keys/ec2/$name ~/.ec2
