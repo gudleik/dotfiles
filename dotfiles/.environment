@@ -21,6 +21,8 @@ export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LESSCOLOR=1
 export ACK_PAGER="less $LESS"
 
+export GREP_COLOR='31;40'
+
 export PAGER="less $LESS"
 
 export NODE_PATH="/usr/local/lib/node_modules:/usr/local/lib/node"
