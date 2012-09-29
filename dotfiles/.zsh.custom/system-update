@@ -1,0 +1,10 @@
+brew update
+gem update
+dotty update shellconfig
+dotty update vimconfig
+dotty update_submodules vimconfig
+
+update-rbenv
+
+# print outdated brew packages
+brew outdated

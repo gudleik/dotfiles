@@ -1,0 +1,21 @@
+alias -g psg='ps aux | grep'
+alias la='ls -la'
+alias l='less'
+alias grep='grep --color=auto'
+alias n='nc -vz'
+
+# Bundler aliases 
+alias b='bundle' 
+alias bi="b install --path ~/code/.gems" 
+alias binit="bi && b package"
+
+# Git aliases
+alias gup='git smart-pull'
+alias gst='git status' 
+alias gd='git diff'
+alias gl='git l'
+alias gsl='git smart-log'
+alias grh='git reset --hard'
+alias d='git diff'
+alias s='git status --short'
+alias gau='git add --update'

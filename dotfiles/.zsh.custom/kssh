@@ -1,0 +1,1 @@
+ssh ubuntu@$(knife node show $1 -a ec2.public_hostname -F text | cut -b 23-)
