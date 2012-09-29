@@ -22,3 +22,5 @@ alias gau='git add --update'
 alias ga='git add'
 alias gb='git branch -v'
 alias gba='git branch -v --all'
+
+alias -g G='|fgrep'
