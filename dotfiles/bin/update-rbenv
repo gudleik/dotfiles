@@ -1,7 +1,6 @@
-pwd=$(pwd) 
+#!/bin/sh
+
 for plugin in ~/.rbenv/plugins/*; do
   cd $plugin
   git pull -q origin master
 done
-
-cd $pwd

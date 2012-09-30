@@ -11,4 +11,4 @@ source ~/.environment
 source ~/.aliases
 
 fpath=(~/.zsh.custom $fpath)
-autoload update-rbenv system-update kssh ec2
+autoload kssh ec2

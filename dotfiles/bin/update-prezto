@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd ~/.zprezto
+git smart-pull
+git submodule foreach git pull -q origin master
+git fetch upstream
+git merge upstream/master
