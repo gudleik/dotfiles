@@ -2,3 +2,7 @@
   path = dotfiles/.keys
   url = git@github.com:gudleik/keys.git
   ignore = dirty
+[submodule "dotfiles/.zprezto"]
+  path = dotfiles/.zprezto
+  url = git@github.com:gudleik/prezto.git
+  ignore = dirty
