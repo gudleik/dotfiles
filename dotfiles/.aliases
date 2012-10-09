@@ -9,6 +9,7 @@ alias b='bundle'
 alias bi="b install --path ~/code/.gems" 
 alias be="bundle exec"
 alias binit="bi && b package"
+alias be='bundle exec'
 
 # Git aliases
 alias gup='git smart-pull'
