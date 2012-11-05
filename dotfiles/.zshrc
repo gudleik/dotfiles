@@ -8,6 +8,7 @@ fi
 # setopt correct
 
 source ~/.environment
+source ~/.ec2/environment
 source ~/.aliases
 
 fpath=(~/.zsh.custom $fpath)
