@@ -69,22 +69,22 @@ manpath=(
   $manpath
 )
 
-for path_file in /etc/manpaths.d/*(.N); do
-  manpath+=($(<$path_file))
-done
+# for path_file in /etc/manpaths.d/*(.N); do
+#   manpath+=($(<$path_file))
+# done
 unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  $path
   /usr/{bin,sbin}
   /{bin,sbin}
-  $path
 )
 
-for path_file in /etc/paths.d/*(.N); do
-  path+=($(<$path_file))
-done
+# for path_file in /etc/paths.d/*(.N); do
+#   path+=($(<$path_file))
+# done
 unset path_file
 
 #
@@ -98,3 +98,4 @@ if [[ -d "$TMPDIR" ]]; then
   fi
 fi
 
+export PATH=/Users/gudleik/.rbenv/shims:/Users/gudleik/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/Users/gudleik/bin:/usr/local/share/npm/bin
