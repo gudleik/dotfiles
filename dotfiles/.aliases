@@ -1,4 +1,4 @@
-alias -g psg='ps aux | grep'
+alias -g psg='ps aux | grep -i'
 alias la='ls -la'
 alias l='less'
 alias grep='grep --color=auto'
