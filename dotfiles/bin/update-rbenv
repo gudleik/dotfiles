@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ~/.rbenv
+git pull origin master
 for plugin in ~/.rbenv/plugins/*; do
   cd $plugin
   git pull -q origin master
