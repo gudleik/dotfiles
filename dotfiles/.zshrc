@@ -11,5 +11,5 @@ source ~/.environment
 source ~/.ec2/environment
 source ~/.aliases
 
-fpath=(~/.zsh.custom /usr/local/share/zsh-completions $fpath)
+fpath=(~/.zsh.custom $fpath)
 autoload kssh ec2
