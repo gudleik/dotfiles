@@ -61,6 +61,7 @@
   changelog = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
   last = log -1 HEAD
+  standup = !clear && git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --author $USER
 
   # pull
   pl = pull                         # pull
