@@ -4,16 +4,17 @@ alias l='less'
 alias grep='grep --color=auto'
 alias n='nc -vz'
 
-# Bundler aliases 
-alias b='bundle' 
-alias bi="b install --path ~/code/.gems" 
+# Bundler aliases
+alias b='bundle'
+alias bi="b install --path ~/code/.gems"
 alias be="bundle exec"
 alias binit="bi && b package"
 alias be='bundle exec'
+alias bck='bundle check'
 
 # Git aliases
 alias gup='git smart-pull'
-alias gst='git status' 
+alias gst='git status'
 alias gd='git diff'
 alias gl='git l'
 alias gsl='git smart-log'

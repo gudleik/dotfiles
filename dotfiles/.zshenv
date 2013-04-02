@@ -98,4 +98,4 @@ if [[ -d "$TMPDIR" ]]; then
   fi
 fi
 
-export PATH=/Users/gudleik/.rbenv/shims:/Users/gudleik/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/Users/gudleik/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/heroku/bin:/Users/gudleik/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/gudleik/bin:/usr/local/share/npm/bin
