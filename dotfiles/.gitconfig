@@ -107,7 +107,7 @@
 
 [core]
   autocrlf = false
-  excludesfile = /Users/gudleik/.gitignore
+	excludesfile = /Users/gudleik/.gitignore
 	quotepath = false
   editor = vim
 
@@ -142,3 +142,9 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
