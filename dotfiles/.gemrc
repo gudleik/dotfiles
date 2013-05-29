@@ -2,7 +2,6 @@
 gem: --no-ri --no-rdoc
 :benchmark: false
 :sources: 
-#- http://rubygems.dev
 - https://rubygems.org
 :bulk_threshold: 1000
 :backtrace: false

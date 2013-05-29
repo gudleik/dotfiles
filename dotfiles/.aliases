@@ -6,7 +6,7 @@ alias n='nc -vz'
 
 # Bundler aliases
 alias b='bundle'
-alias bi="b install --path ~/code/.gems"
+alias bi="rbbi"
 alias be="bundle exec"
 alias binit="bi && b package"
 alias be='bundle exec'
