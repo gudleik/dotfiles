@@ -17,7 +17,7 @@ fi
 # Editors
 #
 
-export EDITOR='subl -w'
+export EDITOR='subl3 -w'
 export VISUAL='vim'
 export PAGER='less'
 
@@ -76,10 +76,15 @@ unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  ./bin
   /usr/local/{bin,sbin}
+  /Applications/Postgres.app/Contents/MacOS/bin
   $path
   /usr/{bin,sbin}
   /{bin,sbin}
+  $HOME/bin
+  /usr/local/heroku/bin
+  /usr/local/share/npm/bin
 )
 
 # for path_file in /etc/paths.d/*(.N); do
@@ -97,5 +102,3 @@ if [[ -d "$TMPDIR" ]]; then
     mkdir -p "$TMPPREFIX"
   fi
 fi
-
-export PATH=/usr/local/heroku/bin:/Users/gudleik/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/gudleik/bin:/usr/local/share/npm/bin
