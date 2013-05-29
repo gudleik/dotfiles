@@ -55,24 +55,12 @@ typeset -gUT INFOPATH infopath
 #   $cdpath
 # )
 
-# Set the list of directories that info searches for manuals.
-infopath=(
-  /usr/local/share/info
-  /usr/share/info
-  $infopath
-)
-
 # Set the list of directories that man searches for manuals.
 manpath=(
   /usr/local/share/man
   /usr/share/man
   $manpath
 )
-
-# for path_file in /etc/manpaths.d/*(.N); do
-#   manpath+=($(<$path_file))
-# done
-unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
@@ -87,18 +75,17 @@ path=(
   /usr/local/share/npm/bin
 )
 
-# for path_file in /etc/paths.d/*(.N); do
-#   path+=($(<$path_file))
-# done
-unset path_file
-
 #
 # Temporary Files
 #
 
-if [[ -d "$TMPDIR" ]]; then
-  export TMPPREFIX="${TMPDIR%/}/zsh"
-  if [[ ! -d "$TMPPREFIX" ]]; then
-    mkdir -p "$TMPPREFIX"
-  fi
+if [[ ! -d "$TMPDIR" ]]; then
+  export TMPDIR="/tmp/$USER"
+  mkdir -p -m 700 "$TMPDIR"
 fi
+
+TMPPREFIX="${TMPDIR%/}/zsh"
+if [[ ! -d "$TMPPREFIX" ]]; then
+  mkdir -p "$TMPPREFIX"
+fi
+
